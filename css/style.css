@@ -172,6 +172,10 @@ body {
     margin-right: 10px;
 }
 
+html {
+    background-color: #F2EAD3;
+}
+
 /* 
 Add p padding, color and font-family.
 */
@@ -183,10 +187,13 @@ p, li, ul, h1, h2, h3, figcaption{
 }
 
 
-/* Center the home page text. */
+/* 
+Center the home page text. 
+*/
 .home-content {
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 
