@@ -1,0 +1,218 @@
+* {
+    /* Got rid of these as my header/footer didnt take all the width */
+    margin: 0;
+    padding: 0;
+    /* This helps layout problems */
+    box-sizing: border-box;
+}
+
+/* 
+Flex container for navbar. 
+`box-shadow` here is for the whole container.
+*/
+.nav-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #FFD369;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/*
+`box-shadow` for each child of the container.
+`transition` for the hover thingy.
+*/
+nav li {
+    padding: 13px;
+    background-color: #fcc33e;
+    font-size: 105%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+
+/* 
+Make it so that if I hover to the navbar it turns darker yellow.
+Also increase the shadow. 
+*/
+nav li:hover {
+    background-color: #efb93d;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+Makes the active page in the navbar 
+darker yellow so we know where we are.
+*/
+.active_page {
+    background-color: #efb93d;
+    border-radius: 5px;
+}
+
+/* 
+Gets rid of nav's text decorations. 
+*/
+nav a {
+    text-decoration: none;
+    color: #222831;
+}
+
+/* 
+Media query for navbar.
+*/
+@media (max-width: 600px) {
+    .nav-flex-container {
+        flex-flow: column wrap;
+    }
+}
+
+/* 
+Flex container for the photo gallery.
+*/
+.flex-photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 0 is for top/bottom, 4 is for left/right. */
+    padding: 0 4px; 
+}
+
+/* 
+Flex children - `flex: 25` , 4 columns.
+*/
+.photo-column {
+    flex: 25%;
+    max-width: 25%;
+    /* 0 is for top/bottom, 4 is for left/right. */
+    padding: 0 4px;
+}
+
+/* 
+Add some padding and allign for better layout.
+*/
+.photo-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* 
+Media query to make the gallery two (2) columns.
+*/
+@media (max-width: 800px) {
+    .photo-column {
+        /* 2 COLUMNS */
+        flex: 50%; 
+        max-width: 50%;
+    }
+}
+
+/* 
+Media query to make the gallery one (1) column.
+*/
+@media (max-width: 600px) {
+    .photo-column {
+        /* 1 COLUMNS */
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* 
+Flex container for the cards.
+*/
+.card-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh;
+}
+
+/* 
+Borders, shadows and a transition for the cards.
+*/
+.cards img {
+    border: 5px solid #393E46;
+    border-radius: 15px;
+    /* We make a transition to move it upwards */
+    transition: transform 0.4s ease;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 
+Bring to life the transition and add some more shadow.
+*/
+.cards img:hover {
+    /* Move it upwards. */
+    transform: translate(0, -5px);
+    /* Add a tad bit more shadow. */
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+Query that matches the 600px of navbar for the cards.
+*/
+@media (max-width: 600px) {
+    .card-flex-container {
+        flex-flow: column wrap;
+        padding-bottom: 40px;
+    }
+}
+
+/*
+Background color.
+*/
+body {
+    background-color: #F2EAD3;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 
+Add p padding, color and font-family.
+*/
+p, li, ul, h1, h2, h3, figcaption{
+    color: #373c42;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    list-style-type: none;
+}
+
+
+/* Center the home page text. */
+.home-content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* 
+FOOTER.
+Add border radius, shadows.
+Fixed position to the bottom.
+`left` and `bottom` is to stay down. 
+*/
+footer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #393E46;
+    text-align: center;
+}
+
+/* 
+Color for footer text.
+*/
+.footer p {
+    padding-top: 13px;
+    color: #EEEEEE	;   
+}

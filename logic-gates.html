@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Gates Intro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="top">
+            <ul class="nav-flex-container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="compsci.html">Computers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="top">
+            Boolean Algebra and Logic Gates
+        </h1>
+        <h2>
+            Brief Intro
+        </h2>
+        <p>
+            What are logic gates and why are they useful? A long time ago a man named Bool introduced
+            boolean algebra which is the core foundation of digital logic! You might ask how is that even useful? Bear
+            with me for a minute because this kind of mathematics
+            are super important and kinda fun!
+        </p>
+        <p>
+            Boolean algebra has some variables that are pretty simple. They can only be in two (2)
+            states either zero (0) or one (1), as in False or True. By taking one or more variables we can do logical
+            operations with them and there are quite a lot of them.
+            One of the most simple operators are AND, OR and NOT so let's dive right into those three.
+        </p>
+        <h2>NOT Operator - Negation</h2>
+        <p>The NOT operator is very easy. It takes a a variable and just negates it.
+            So for example if we have a variable of zero as in False, if we negate it
+            the output will be one as in True. In order to represent all of the operations
+            and possible outcomes we can use the so called truth tables to concisely represent everything.
+            Here is a truth table of the NOT operator.
+        <p>
+            The notation used for negation is signified with "¬".
+        </p>
+
+        </p>
+        <figure>
+            <img src="images/logic-gates-figures/not-truth-table.png"
+                alt="Truth table showing possible outcomes of the logical operation NOT." width="30%">
+            <figcaption>Fig.1 - NOT Truth Table.</figcaption>
+        </figure>
+
+        <p>Note that if we negate something twice nothing really changes since we get back where we started from so ¬¬ X
+            is equivalent to X and is written as ¬¬ X ≡ X. The tribar is often seen in mathematics where there is an
+            equivalence of two different things.</p>
+
+        <h2>OR Operator - Disjunction</h2>
+
+        <p>
+            The OR operator which is also referred as a disjunction is annotated as X ∨ Y and outputs True if one of the
+            inputs are True.
+        </p>
+
+        <figure>
+            <img src="images/logic-gates-figures/or-truth-table.png"
+                alt="Truth table showing possible outcomes of the logical operation OR." width="30%">
+            <figcaption>Fig.2 - OR Truth Table.</figcaption>
+        </figure>
+
+        <h2>AND Operator - Conjunction</h2>
+
+        <p>The AND operator which is a conjuction is annotated as X ^ Y. AND outputs True only if both of the input X
+            and Y are True.</p>
+
+        <figure>
+            <img src="images/logic-gates-figures/and-truth-table.png"
+                alt="Truth table showing possible outcomes of the logical operation AND." width="30%">
+            <figcaption>Fig.3 - AND Truth Table.</figcaption>
+        </figure>
+
+        <h2>Exclusive OR (XOR)</h2>
+
+        <p>The operation of XOR that is referred as exclusive is annotated with a circle and a cross in the middle as
+            such X ⊕ Y. XOR outputs True only if one of the inputs is True. It is similar to the OR operator but in this
+            case when both of the inputs are True then the XOR operator outputs false hence the exclusive.</p>
+
+        <figure>
+            <img src="images/logic-gates-figures/xor-truth-table.png"
+                alt="Truth table showing possible outcomes of the logical operation AND." width="30%">
+            <figcaption>Fig.4 - XOR Truth Table.</figcaption>
+        </figure>
+
+        <h2>Logic Gates</h2>
+
+        <p>Logic gates are devices that peform the logical operations we previously saw. They take one or more binary
+            inputs and produce an output. They can be found nearly everywhere as they are the foundation of digital
+            devices. Here are the previous logical operations drawn with logic gates.</p>
+
+        <figure>
+            <img src="images/logic-gates-figures/logic-gates.png"
+                alt="Truth table showing possible outcomes of the logical operation AND." width="40%">
+            <figcaption style="padding-bottom: 60px;">Fig.5 - NOT, OR, AND and XOR gates.</figcaption>
+        </figure>
+
+    </main>
+    <footer class="footer">
+        <p>Konstantinos Giasemis, 2025.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/* 
+Remove margin & padding for *.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Flex container for navbar. 
+`box-shadow` here is for the whole container.
+*/
+.nav-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #9DC08B;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*
+`box-shadow` for each child of the container.
+`transition` for the hover thingy.
+*/
+nav li {
+    padding: 13px;
+    background-color: #9DC08B;
+    font-size: 115%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+
+/* 
+Make it so that if I hover to the navbar it turns darker green.
+Also increase the shadow. 
+*/
+nav li:hover {
+    background-color: #609966;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+Makes the active page in the navbar 
+darker green so we know where we are.
+*/
+.active_page {
+    background-color: #609966;
+    border-radius: 5px;
+}
+
+/* 
+Gets rid of nav's text decorations. 
+*/
+nav a {
+    text-decoration: none;
+    color: #40513B;
+}
+
+/*
+Background color, duh.
+*/
+body {
+    background-color: #EDF1D6;
+}
+
+/* 
+Add p padding, color and font-family.
+*/
+p {
+    color: #40513B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 13px;
+}
+
+/* 
+Add border radius, shadows.
+Fixed position to the bottom.
+left/bottom I wanted them so I can have it at the bottom.
+*/
+footer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #40513B;
+    text-align: center;
+}
+
+/* Color for footer text */
+.footer p {
+    color: #EDF1D6;   
+}
+
