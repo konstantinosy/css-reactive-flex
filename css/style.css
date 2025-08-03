@@ -171,6 +171,10 @@ body {
     margin-right: 10px;
 }
 
+html {
+    background-color: #F2EAD3;
+}
+
 /* 
 Add p padding, color and font-family.
 */
