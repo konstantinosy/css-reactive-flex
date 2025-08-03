@@ -142,7 +142,6 @@ Borders, shadows and a transition for the cards.
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 /* 
 Bring to life the transition and add some more shadow.
 */
@@ -167,22 +166,9 @@ Query that matches the 600px of navbar for the cards.
 Background color.
 */
 body {
-    height: 100%; /* placeholder */
     background-color: #F2EAD3;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 0;/* placeholder */
-    margin: 0;/* placeholder */
-}
-
-/* 
-For the bouncing scroll effect on Safari.
-*/
-html {
-    height: 100%;/* placeholder */
-    background-color: #F2EAD3;/* placeholder */
-    padding: 0;/* placeholder */
-    margin: 0;/* placeholder */
 }
 
 /* 
@@ -195,7 +181,6 @@ p, li, ul, h1, h2, h3, figcaption{
     list-style-type: none;
 }
 
-
 /* 
 Center the home page text. 
 */
@@ -204,7 +189,6 @@ Center the home page text.
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
 
 /* 
 FOOTER.
