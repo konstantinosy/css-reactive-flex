@@ -167,20 +167,22 @@ Query that matches the 600px of navbar for the cards.
 Background color.
 */
 body {
+    height: 100%; /* placeholder */
     background-color: #F2EAD3;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 0;
-    margin: 0;
+    padding: 0;/* placeholder */
+    margin: 0;/* placeholder */
 }
 
 /* 
 For the bouncing scroll effect on Safari.
 */
 html {
-    background-color: #F2EAD3;
-    padding: 0;
-    margin: 0;
+    height: 100%;/* placeholder */
+    background-color: #F2EAD3;/* placeholder */
+    padding: 0;/* placeholder */
+    margin: 0;/* placeholder */
 }
 
 /* 
