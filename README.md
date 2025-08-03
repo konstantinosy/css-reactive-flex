@@ -8,6 +8,7 @@
   * Adaptive cards
  
 * Accessibility
-  * Passes WCAG AAA for colors:)
-  * Semantics were used along with back to top links
+  * Passes WCAG AAA for colors :).
+  * Semantics are used along with alt= wherever possible.
+  
  
