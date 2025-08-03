@@ -1,4 +1,4 @@
-# CSS Website.
+# CSS Website
 
 ## Features
 
