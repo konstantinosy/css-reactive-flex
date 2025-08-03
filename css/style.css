@@ -29,6 +29,7 @@ nav li {
     padding: 13px;
     background-color: #fcc33e;
     font-size: 105%;
+    border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
 }
