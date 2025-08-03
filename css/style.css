@@ -171,8 +171,17 @@ body {
     margin-right: 10px;
 }
 
-html {
+/* 
+iOS Safari fix for the rubber banding when scroll reaches to an end.
+Content is needed to exist, inset fills the entire screen and z makes sure
+it's behind everything.
+*/
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
     background-color: #F2EAD3;
+    z-index: -1;
 }
 
 /* 
