@@ -26,12 +26,12 @@ Flex container for navbar.
 `transition` for the hover thingy.
 */
 nav li {
-    padding: 13px;
     background-color: #fcc33e;
     font-size: 105%;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
+    margin: 2px;
 }
 
 /* 
@@ -59,6 +59,8 @@ Gets rid of nav's text decorations.
 nav a {
     text-decoration: none;
     color: #222831;
+    padding: 10px;
+    display: block;
 }
 
 /* 
@@ -187,7 +189,7 @@ body::before {
 /* 
 Add p padding, color and font-family.
 */
-p, li, ul, h1, h2, h3, figcaption{
+p, li, ul, h1, h2, h3, figcaption {
     color: #373c42;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
@@ -227,5 +229,5 @@ Color for footer text.
 */
 .footer p {
     padding-top: 13px;
-    color: #EEEEEE	;   
+    color: #EEEEEE;   
 }
