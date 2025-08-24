@@ -3,9 +3,9 @@
 ## Features
 
 * Flexbox + queries
-  * Adaptive navbar
-  * Adaptive photo gallery
-  * Adaptive cards
+  * Reactive navbar.
+  * Reactive photo gallery. 
+  * Cards with animations. 
  
 * Accessibility
   * Passes WCAG AAA for colors :).
